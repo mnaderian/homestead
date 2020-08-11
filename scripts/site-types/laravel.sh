@@ -38,6 +38,14 @@ else configureXhgui=""
 fi
 
 block="server {
+    listen 80;
+    listen [::]:80;
+    
+    server_name .$1;
+    
+    return 301 https://$1$request_uri;
+}
+server {
     listen ${3:-80};
     listen ${4:-443} ssl http2;
     server_name .$1;
