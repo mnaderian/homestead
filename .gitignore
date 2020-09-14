@@ -9,4 +9,9 @@ phpunit.xml
 /mysql_backup
 /postgres_backup
 /user-customizations.sh
+<<<<<<< HEAD
 *.log
+=======
+.phpunit.result.cache
+wsl-init.log
+>>>>>>> c911ffc1bb916e770884b04ad9918c1522ed507f
